@@ -1,3 +1,10 @@
+ESSE REPOSITÓRIO É REFERENTE A API CRIADA PRA ESTUDO DO VINICIUS PESSONI, E NESSE CÓDIGO CONTÉM TESTES PRATICADOS NO POSTMAN.
+
+
+SEGUE ABAIXO A DOCUMENTAÇÃO DA API, JUNTAMENTE COM MEUS TESTES NO POSTMAN.
+
+
+
 ## API Exemplo Cliente
 
 Essa é um exemplo de uma API (microserviço) para estudo tanto de programação quanto testes automatizados.
