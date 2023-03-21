@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "6d8ab958-2c03-454a-ae9a-612ef4dc1173",
+		"name": "CT2.0",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21805839"
+	},
+	"item": [
+		{
+			"name": "Pegar todos os clientes",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{ClienteAPI}}",
+					"host": [
+						"{{ClienteAPI}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cadastrar novo cliente",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n            \"nome\": \"Larissa\",\r\n            \"idade\": 20,\r\n             \"id\": \"456789\"\r\n             \r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ClienteAPI}}/cliente",
+					"host": [
+						"{{ClienteAPI}}"
+					],
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Atualizar cliente",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n            \"nome\": \"Vinny\",\r\n            \"idade\": 33,\r\n             \"id\": \"123456789\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{ClienteAPI}}/cliente",
+					"host": [
+						"{{ClienteAPI}}"
+					],
+					"path": [
+						"cliente"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Deletar Cliente",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{ClienteAPI}}/cliente/456789",
+					"host": [
+						"{{ClienteAPI}}"
+					],
+					"path": [
+						"cliente",
+						"456789"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
